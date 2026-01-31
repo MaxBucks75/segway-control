@@ -1,0 +1,172 @@
+# Compile of PID_Math.sv failed with 2 errors.
+# Compile of PID_Math_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of PID_Math.sv failed with 5 errors.
+# Compile of PID_Math_tb.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of PID_Math.sv failed with 2 errors.
+# Compile of PID_Math_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of PID_Math.sv was successful.
+# Compile of PID_Math_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.PID_Math_tb
+# vsim -gui work.PID_Math_tb 
+# Start time: 16:36:05 on Sep 28,2025
+# Loading sv_std.std
+# Loading work.PID_Math_tb
+# Loading work.PID_Math
+add wave -position insertpoint  \
+sim:/PID_Math_tb/ptch
+add wave -position insertpoint  \
+sim:/PID_Math_tb/integrator
+add wave -position insertpoint  \
+sim:/PID_Math_tb/input_rt
+add wave -position insertpoint  \
+sim:/PID_Math_tb/PID_cntrl
+run -all
+# ** Note: $stop    : C:/Users/maxbu/OneDrive/Desktop/ECE 551/Ex07/PID_Math_tb.sv(88)
+#    Time: 1024 ps  Iteration: 0  Instance: /PID_Math_tb
+# Break in Module PID_Math_tb at C:/Users/maxbu/OneDrive/Desktop/ECE 551/Ex07/PID_Math_tb.sv line 88
+quit -sim
+# End time: 17:51:07 on Sep 28,2025, Elapsed time: 1:15:02
+# Errors: 0, Warnings: 8
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project hw02
+# Compile of 4bit_addr.sv failed with 1 errors.
+# Compile of 4bit_addr_tb.sv failed with 2 errors.
+# 2 compiles, 2 failed with 3 errors.
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project hw02
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.four_bit_addr_tb
+# vsim -gui work.four_bit_addr_tb 
+# Start time: 17:55:32 on Sep 28,2025
+# Loading sv_std.std
+# Loading work.four_bit_addr_tb
+# Loading work.four_bit_addr
+# ** Error: (vsim-3043) Unresolved reference to 'A'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'A'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'B'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'B'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Co'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Co'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error: (vsim-3043) Unresolved reference to 'Sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'A'. The port definition is at: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb/iDUT File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'B'. The port definition is at: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb/iDUT File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb/iDUT File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'Sum'. The port definition is at: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb/iDUT File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Co'.
+#    Time: 0 ps  Iteration: 0  Instance: /four_bit_addr_tb/iDUT File: C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv Line: 9
+# Error loading design
+# End time: 17:55:32 on Sep 28,2025, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 14
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.four_bit_addr_tb
+# vsim -gui work.four_bit_addr_tb 
+# Start time: 17:56:51 on Sep 28,2025
+# Loading sv_std.std
+# Loading work.four_bit_addr_tb
+# Loading work.four_bit_addr
+run -all
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+add wave -position insertpoint  \
+sim:/four_bit_addr_tb/a \
+sim:/four_bit_addr_tb/b \
+sim:/four_bit_addr_tb/cin \
+sim:/four_bit_addr_tb/sum \
+sim:/four_bit_addr_tb/co \
+sim:/four_bit_addr_tb/a_index \
+sim:/four_bit_addr_tb/b_index \
+sim:/four_bit_addr_tb/cin_index \
+sim:/four_bit_addr_tb/sum_ref \
+sim:/four_bit_addr_tb/co_ref
+quit -sim
+# End time: 18:03:50 on Sep 28,2025, Elapsed time: 0:06:59
+# Errors: 0, Warnings: 3
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project hw02
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.four_bit_addr_tb
+# vsim -gui work.four_bit_addr_tb 
+# Start time: 18:04:25 on Sep 28,2025
+# Loading sv_std.std
+# Loading work.four_bit_addr_tb
+# Loading work.four_bit_addr
+add wave -position insertpoint  \
+sim:/four_bit_addr_tb/a \
+sim:/four_bit_addr_tb/b \
+sim:/four_bit_addr_tb/cin \
+sim:/four_bit_addr_tb/sum \
+sim:/four_bit_addr_tb/co \
+sim:/four_bit_addr_tb/a_index \
+sim:/four_bit_addr_tb/b_index \
+sim:/four_bit_addr_tb/cin_index \
+sim:/four_bit_addr_tb/sum_ref \
+sim:/four_bit_addr_tb/co_ref
+run -all
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.four_bit_addr_tb
+# Loading work.four_bit_addr
+# Compile of four_bit_addr.sv was successful.
+# Compile of four_bit_addr_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# All tests passed!
+# ** Note: $stop    : C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv(44)
+#    Time: 512 ps  Iteration: 0  Instance: /four_bit_addr_tb
+# Break in Module four_bit_addr_tb at C:/Users/maxbu/OneDrive/Desktop/ECE 551/Hw02/four_bit_addr_tb.sv line 44
+quit -sim
+# End time: 18:12:27 on Sep 28,2025, Elapsed time: 0:08:02
+# Errors: 0, Warnings: 2
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project hw02
+# Compile of adder.sv was successful.
+# Compile of adder_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled

@@ -1,0 +1,17 @@
+{C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv.sv} {2 {vlog -work work -sv -stats=none {C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module piezo_drv
+** Warning: C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv.sv(151): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv.sv(174): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	piezo_drv
+
+} {} {}} {C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module piezo_drv_tb
+
+Top level modules:
+	piezo_drv_tb
+
+} {} {}}

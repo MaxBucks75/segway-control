@@ -1,0 +1,92 @@
+module PID_Math_tb();
+
+    // Testbench signals must be declared and driven here.
+    // Match the DUT port signed widths
+    reg  signed [15:0] ptch;
+    reg  signed [15:0] input_rt;
+    reg  signed [17:0] integrator;
+    wire signed [11:0] PID_cntrl;
+
+    // Instantiate DUT
+    PID_Math iDUT (
+        .ptch(ptch),
+        .input_rt(input_rt),
+        .integrator(integrator),
+        .PID_cntrl(PID_cntrl)
+    );
+
+initial begin
+
+    ptch = 16'hFF00; // -256 will ramp up to +255
+    input_rt = 16'h0FFF; // starts at 0FFF will ramp down to F000 and up 8 times
+    integrator = 18'h3C000; // starts at 3C000 will ramp up to 03FFF and down 4 times
+
+    // increase pitch, decrease rate, increase integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt - 16'h0100;
+        integrator = integrator + 18'h0080;
+    end
+
+    // increase pitch, increase rate, increase integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt + 16'h0100;
+        integrator = integrator + 18'h0080;
+    end
+
+    // increase pitch, decrease rate, decrease integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt - 16'h0100;
+        integrator = integrator - 18'h0080;
+    end
+
+    // increase pitch, increase rate, decrease integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt + 16'h0100;
+        integrator = integrator - 18'h0080;
+    end
+
+    // increase pitch, decrease rate, increase integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt - 16'h0100;
+        integrator = integrator + 18'h0080;
+    end
+
+    // increase pitch, increase rate, increase integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt + 16'h0100;
+        integrator = integrator + 18'h0080;
+    end
+
+    // increase pitch, decrease rate, decrease integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt - 16'h0100;
+        integrator = integrator - 18'h0080;
+    end
+
+    // increase pitch, increase rate, decrease integrator
+    repeat(64) begin
+        #2;
+        ptch = ptch + 16'h0001;
+        input_rt = input_rt + 16'h0100;
+        integrator = integrator - 18'h0080;
+    end
+
+    $stop;
+
+end
+
+endmodule

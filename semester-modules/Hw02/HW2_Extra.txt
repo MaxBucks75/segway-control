@@ -1,0 +1,8 @@
+a) Does the gyro output angular position, or angular rate? 
+The gyro outputs angular rate.
+
+b) If we wanted an output data rate around 300 readings per second does it support that?
+Maybe, the output data rate supports 208 Hz or 416 Hz which doesn't seem close to 300.
+
+c) How would we synchronize our Verilog with it…how would we know it has a new set of measurements ready for us?
+We can use the interrupt pins which signal that new gyroscope data is ready. To do this you might connect the interrupt pin to an FPGA board and on each rising edge, you would read the registers in the gyroscope.

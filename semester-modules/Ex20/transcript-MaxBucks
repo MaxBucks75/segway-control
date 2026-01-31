@@ -1,0 +1,41 @@
+# Compile of piezo_drv.sv was successful with warnings.
+# Compile of piezo_drv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.piezo_drv_tb
+# vsim -gui work.piezo_drv_tb 
+# Start time: 11:08:11 on Nov 10,2025
+# Loading sv_std.std
+# Loading work.piezo_drv_tb
+# Loading work.piezo_drv
+add wave -position insertpoint  \
+sim:/piezo_drv_tb/clk \
+sim:/piezo_drv_tb/rst_n \
+sim:/piezo_drv_tb/en_steer \
+sim:/piezo_drv_tb/too_fast \
+sim:/piezo_drv_tb/batt_low \
+sim:/piezo_drv_tb/piezo \
+sim:/piezo_drv_tb/piezo_n
+add wave -position insertpoint  \
+sim:/piezo_drv_tb/dut/state \
+sim:/piezo_drv_tb/dut/nxt_state \
+sim:/piezo_drv_tb/dut/duration_tmr \
+sim:/piezo_drv_tb/dut/duration_tmr_done \
+sim:/piezo_drv_tb/dut/repeat_tmr \
+sim:/piezo_drv_tb/dut/repeat_tmr_done \
+sim:/piezo_drv_tb/dut/freq_tmr
+# Compile of piezo_drv.sv was successful with warnings.
+# Compile of piezo_drv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.piezo_drv_tb
+# Loading work.piezo_drv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv_tb.sv(64)
+#    Time: 18381205 ps  Iteration: 1  Instance: /piezo_drv_tb
+# Break in Module piezo_drv_tb at C:/Users/maxbu/OneDrive/code/ECE 551/Ex20/piezo_drv_tb.sv line 64
+# End time: 14:35:47 on Nov 11,2025, Elapsed time: 27:27:36
+# Errors: 0, Warnings: 1
