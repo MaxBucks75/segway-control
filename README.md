@@ -22,7 +22,7 @@ When I got back to Madison, there wasn't much for me to do outside of proofreadi
 
 I've linked the completed project at the bottom of this readme.
 
-![Here I am Riding the Segway](images/me-on-segway.jpg)
+![Here I am Riding the Segway](images/me-on-segway.JPG)
 
 ## Here is the entire project 
 
