@@ -140,3 +140,4 @@ module A2D_intf(clk, rst_n, nxt, batt, rght_ld, lft_ld, steer_pot, SS_n, SCLK, M
     end
 
 endmodule
+
