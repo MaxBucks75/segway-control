@@ -1,6 +1,6 @@
 # Segway Control
 
-![Segway](images/segway.jpg)
+![Segway](images/segway-cropped.JPG)
 
 This repository contains SystemVerilog driver modules I authored during Digital Design and Synthesis (ECE551) at the University of Wisconsin–Madison.
 
